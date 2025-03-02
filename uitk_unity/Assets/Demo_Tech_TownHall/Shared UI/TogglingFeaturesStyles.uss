@@ -1,0 +1,11 @@
+.mainContainer {
+    flex-shrink: 1;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}

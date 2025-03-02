@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UITK/Editor/TutorialTool.uss?fileID=7433441132597879392&amp;guid=5683f4d7b8984492f9d598c3e71373b5&amp;type=3#TutorialTool" />
+    <engine:Label text="These controls where created using the UI Builder" />
+    <engine:VisualElement name="container1" class="yellow">
+        <engine:Button name="OK" text="OK" class="yellow" style="top: auto; position: relative; left: auto; width: auto;" />
+        <engine:Button name="Cancel" text="Cancel" />
+    </engine:VisualElement>
+    <engine:VisualElement name="container3">
+        <engine:VisualElement name="container4" class="yellow">
+            <engine:Button name="OK" text="OK" class="yellow" />
+            <engine:Button name="Cancel" text="Cancel" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

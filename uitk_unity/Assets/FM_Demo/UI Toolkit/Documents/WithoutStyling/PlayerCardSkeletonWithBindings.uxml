@@ -1,0 +1,110 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="cardContainer" data-source="project://database/Assets/Runtime/Teams/MontrealLumberjacks.asset?fileID=11400000&amp;guid=983f6a3be9a6a2e4c93ab5e333eed204&amp;type=2#MontrealLumberjacks" data-source-path="players[0]" class="cardContainer" style="background-color: rgba(255, 255, 255, 0.63); flex-grow: 1;">
+        <ui:VisualElement name="cardSubContainer" class="cardSubContainer" style="flex-grow: 1;">
+            <ui:VisualElement name="idContainer" class="idContainer" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0); width: 80px; height: 80px; align-self: center;">
+                <ui:VisualElement name="nameContainer" class="nameContainer" style="flex-direction: row; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); align-self: center;">
+                    <ui:Label text="First" name="firstNameLabel">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="firstName" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Last" name="lastNameLabel">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="lastName" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="playerIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+            <ui:VisualElement name="mainInfoContainer" class="mainInfoContainer">
+                <ui:VisualElement name="playerInfo" class="playerInfo" style="flex-direction: row; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0); justify-content: space-evenly;">
+                    <ui:VisualElement name="ratingContainer" class="ratingContainer" style="align-self: flex-start; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0);">
+                        <ui:Label text="00" name="ratingValue" class="ratingValue">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="rating" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="clubIcon" class="clubIcon" style="width: 75px; height: 75px; background-color: rgba(255, 0, 0, 0.4);">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="club.teamIcon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="mainStatContainer" class="mainStatContainer" style="flex-direction: row; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                    <ui:VisualElement name="mainStatSubContainer" style="flex-direction: column; flex-grow: 1; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0);">
+                        <ui:VisualElement name="mainStat1Container" class="mainStat1Container" style="flex-grow: 1; flex-shrink: 0; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); flex-direction: row;">
+                            <ui:Label text="Physical:" name="mainStat1Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat1Value">
+                                <Bindings>
+                                    <ui:DataBinding property="text" data-source-path="physical" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:Label>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="mainStat2Container" class="mainStat1Container" style="flex-grow: 1; flex-shrink: 0; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; flex-direction: row;">
+                            <ui:Label text="Technical:" name="mainStat2Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat2Value">
+                                <Bindings>
+                                    <ui:DataBinding property="text" data-source-path="technical" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:Label>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="countryIcon" class="countryIcon" style="width: 75px; height: 75px; background-color: rgba(60, 255, 0, 0.49);">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="nationalTeam.teamIcon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="secondaryInfoContainer" class="secondaryInfoContainer" style="flex-direction: row; flex-grow: 1; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;">
+                <ui:VisualElement name="secStatsContainer" class="secStatsContainer" style="flex-grow: 1;">
+                    <ui:VisualElement name="secStat1Container" style="flex-shrink: 0; flex-grow: 1; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="Strategy" name="secStat1Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat1Bar">
+                            <Bindings>
+                                <ui:DataBinding property="value" data-source-path="strategy" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:ProgressBar>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat2Container" style="flex-shrink: 0; flex-grow: 1; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="Passing" name="secStat2Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat2Bar">
+                            <Bindings>
+                                <ui:DataBinding property="value" data-source-path="passing" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:ProgressBar>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat3Container" style="flex-shrink: 0; flex-grow: 1; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0);">
+                        <ui:Label text="Shooting" name="secStat3Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat3Bar">
+                            <Bindings>
+                                <ui:DataBinding property="value" data-source-path="shooting" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:ProgressBar>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="bioDetails" class="bioDetails">
+                    <ui:VisualElement name="detail1Container" class="bioDetailContainer" style="border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="Age" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="00" name="detail1Value">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="age" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="detail2Container" style="flex-direction: column; justify-content: space-between; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="DOB" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="DD/MM/YYYY" name="detail1Value" style="white-space: pre-wrap; width: 56px; -unity-text-align: upper-left; word-spacing: 10px;">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="dateOfBirth" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

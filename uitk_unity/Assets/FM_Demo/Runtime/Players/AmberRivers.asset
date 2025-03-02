@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a705677ede64f64eb5e842c65a012e5, type: 3}
+  m_Name: AmberRivers
+  m_EditorClassIdentifier: 
+  firstName: Amber
+  lastName: Rivers
+  age: 27
+  dateOfBirth: Dec 23 1997
+  jerseyNumber: 55
+  position: Left Defense
+  rating: 52
+  physical: 42
+  technical: 64
+  strategy: 46
+  passing: 52
+  shooting: 41
+  countryOfBirth: Canada
+  playerIcon: {fileID: 2800000, guid: 879dc6df93d74094484d105ff5e89e35, type: 3}
+  nationalTeam: {fileID: 11400000, guid: 13083cd90fe0ae24a92f785a0fe840fe, type: 2}
+  club: {fileID: 11400000, guid: 983f6a3be9a6a2e4c93ab5e333eed204, type: 2}

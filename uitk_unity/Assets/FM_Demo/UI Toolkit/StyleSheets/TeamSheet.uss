@@ -1,0 +1,124 @@
+.container {
+    -unity-background-image-tint-color: rgb(45, 10, 27);
+    background-color: rgb(20, 36, 56);
+    background-image: url("project://database/Assets/Runtime/Icons/Gradient.png?fileID=2800000&guid=ef8318aae68033743a5214fb12be7d06&type=3#Gradient");
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    border-top-color: rgb(129, 20, 63);
+    border-bottom-color: rgb(248, 222, 0);
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    align-self: flex-start;
+    border-left-color: rgb(129, 20, 63);
+    border-right-color: rgb(248, 222, 0);
+}
+
+.sub-container {
+    background-image: url("project://database/Assets/Runtime/Icons/Gradient.png?fileID=2800000&guid=ef8318aae68033743a5214fb12be7d06&type=3#Gradient");
+    -unity-background-image-tint-color: rgb(129, 20, 63);
+    background-color: rgb(15, 20, 26);
+    border-top-left-radius: 44px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-bottom-right-radius: 44px;
+}
+
+.teamLogo {
+    width: 150px;
+    height: 150px;
+}
+
+.teamInfo {
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.team-label {
+    margin-top: 9px;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    margin-left: 9px;
+}
+
+.playerListContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.separator {
+    height: 5px;
+    align-self: stretch;
+    background-color: rgb(124, 20, 61);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.scroll-view {
+    max-width: 1475px;
+}
+
+.scroll-view__wrap-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.unity-repeat-button {
+    display: none;
+}
+
+#unity-tracker {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#unity-dragger {
+    background-color: rgb(149, 148, 150);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+#unity-dragger:hover {
+    background-color: rgb(248, 222, 0);
+}
+
+#unity-slider {
+    background-color: rgb(15, 20, 26);
+    padding-top: 3px;
+    padding-right: 0;
+    padding-bottom: 3px;
+    padding-left: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}

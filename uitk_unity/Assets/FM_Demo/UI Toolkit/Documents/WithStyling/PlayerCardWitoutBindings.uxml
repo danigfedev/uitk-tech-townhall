@@ -1,0 +1,61 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/PlayerCard.uss?fileID=7433441132597879392&amp;guid=ad8ffdb8bb8db0747892c69607b318c9&amp;type=3#PlayerCard" />
+    <ui:VisualElement name="cardContainer" class="cardContainer">
+        <ui:VisualElement name="cardSubContainer" class="cardSubContainer">
+            <ui:VisualElement name="idContainer" class="idContainer">
+                <ui:VisualElement name="nameContainer" class="nameContainer">
+                    <ui:Label text="First" name="firstNameLabel" />
+                    <ui:Label text="Last" name="lastNameLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="mainInfoContainer" class="mainInfoContainer">
+                <ui:VisualElement name="playerInfo" class="playerInfo">
+                    <ui:VisualElement name="ratingContainer" class="ratingContainer" style="align-self: flex-start;">
+                        <ui:Label text="00" name="ratingValue" class="ratingValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="clubIcon" class="clubIcon" style="background-color: rgba(197, 197, 197, 0.65);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="mainStatContainer" class="mainStatContainer">
+                    <ui:VisualElement name="mainStatSubContainer" style="flex-direction: column;">
+                        <ui:VisualElement name="mainStat1Container" class="mainStat1Container">
+                            <ui:Label text="Physical:" name="mainStat1Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat1Value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="mainStat2Container" class="mainStat1Container">
+                            <ui:Label text="Technical:" name="mainStat2Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat2Value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="countryIcon" class="countryIcon" style="background-color: rgba(176, 176, 176, 0.99);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="secondaryInfoContainer" class="secondaryInfoContainer">
+                <ui:VisualElement name="secStatsContainer" class="secStatsContainer">
+                    <ui:VisualElement name="secStat1Container">
+                        <ui:Label text="Strategy" name="secStat1Label" class="secStatLabel" />
+                        <ui:ProgressBar value="23.2" name="secStat1Bar" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat2Container">
+                        <ui:Label text="Passing" name="secStat2Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat2Bar" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat3Container">
+                        <ui:Label text="Shooting" name="secStat3Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat3Bar" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="separator" style="width: 2px; align-self: flex-end; background-color: rgb(248, 222, 0); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; margin-right: 10px; margin-left: 10px; height: 90%;" />
+                <ui:VisualElement name="bioDetails" class="bioDetails">
+                    <ui:VisualElement name="detail1Container" class="bioDetailContainer">
+                        <ui:Label text="Age" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="00" name="detail1Value" class="detailValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="detail2Container" style="flex-direction: column; justify-content: space-between;">
+                        <ui:Label text="DOB" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="DD/MM/YYYY" name="detail1Value" class="detailValue" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

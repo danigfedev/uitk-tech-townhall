@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a705677ede64f64eb5e842c65a012e5, type: 3}
+  m_Name: BrodyBirch
+  m_EditorClassIdentifier: 
+  firstName: Brody
+  lastName: Birch
+  age: 22
+  dateOfBirth: Jun 13 2002
+  jerseyNumber: 6
+  position: Midfielder
+  rating: 60
+  physical: 49
+  technical: 67
+  strategy: 57
+  passing: 33
+  shooting: 69
+  countryOfBirth: Canada
+  playerIcon: {fileID: 2800000, guid: bfbd9ee7bed01a442b237bb3d7c55de0, type: 3}
+  nationalTeam: {fileID: 11400000, guid: 13083cd90fe0ae24a92f785a0fe840fe, type: 2}
+  club: {fileID: 11400000, guid: 983f6a3be9a6a2e4c93ab5e333eed204, type: 2}

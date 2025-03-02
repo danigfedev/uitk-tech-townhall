@@ -1,0 +1,112 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/FM_Demo/UI%20Toolkit/StyleSheets/PlayerCard.uss?fileID=7433441132597879392&amp;guid=ad8ffdb8bb8db0747892c69607b318c9&amp;type=3#PlayerCard" />
+    <ui:VisualElement name="cardContainer" class="cardContainer" style="background-image: url(&quot;project://database/Assets/FM_Demo/Runtime/Icons/Gradient.png?fileID=2800000&amp;guid=ef8318aae68033743a5214fb12be7d06&amp;type=3#Gradient&quot;);">
+        <ui:VisualElement name="cardSubContainer" enabled="true" class="cardSubContainer" style="background-image: url(&quot;project://database/Assets/FM_Demo/Runtime/Icons/Gradient.png?fileID=2800000&amp;guid=ef8318aae68033743a5214fb12be7d06&amp;type=3#Gradient&quot;);">
+            <ui:VisualElement name="idContainer" enabled="true" class="idContainer">
+                <ui:VisualElement name="nameContainer" class="nameContainer">
+                    <ui:Label text="First" name="firstNameLabel">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="firstName" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Last" name="lastNameLabel">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="lastName" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <Bindings>
+                    <ui:DataBinding property="style.backgroundImage" data-source-path="playerIcon" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:VisualElement>
+            <ui:VisualElement name="mainInfoContainer" class="mainInfoContainer">
+                <ui:VisualElement name="playerInfo" enabled="true" class="playerInfo">
+                    <ui:VisualElement name="ratingContainer" class="ratingContainer" style="align-self: flex-start;">
+                        <ui:Label text="00" name="ratingValue" class="ratingValue">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="rating" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="clubIcon" class="clubIcon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="club.teamIcon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="mainStatContainer" class="mainStatContainer">
+                    <ui:VisualElement name="mainStatSubContainer" style="flex-direction: column;">
+                        <ui:VisualElement name="mainStat1Container" class="mainStat1Container">
+                            <ui:Label text="Physical:" name="mainStat1Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat1Value">
+                                <Bindings>
+                                    <ui:DataBinding property="text" data-source-path="physical" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:Label>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="mainStat2Container" class="mainStat1Container">
+                            <ui:Label text="Technical:" name="mainStat2Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat2Value">
+                                <Bindings>
+                                    <ui:DataBinding property="text" data-source-path="technical" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:Label>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="countryIcon" class="countryIcon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="nationalTeam.teamIcon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="secondaryInfoContainer" class="secondaryInfoContainer">
+                <ui:VisualElement name="secStatsContainer" class="secStatsContainer">
+                    <ui:VisualElement name="secStat1Container">
+                        <ui:Label text="Strategy" name="secStat1Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat1Bar">
+                            <Bindings>
+                                <ui:DataBinding property="value" data-source-path="strategy" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:ProgressBar>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat2Container">
+                        <ui:Label text="Passing" name="secStat2Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat2Bar">
+                            <Bindings>
+                                <ui:DataBinding property="value" data-source-path="passing" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:ProgressBar>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat3Container">
+                        <ui:Label text="Shooting" name="secStat3Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat3Bar">
+                            <Bindings>
+                                <ui:DataBinding property="value" data-source-path="shooting" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:ProgressBar>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="separator" style="width: 2px; align-self: flex-end; background-color: rgb(248, 222, 0); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; margin-right: 10px; margin-left: 10px; height: 90%;" />
+                <ui:VisualElement name="bioDetails" class="bioDetails">
+                    <ui:VisualElement name="detail1Container" class="bioDetailContainer">
+                        <ui:Label text="Age" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="00" name="detail1Value" class="detailValue">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="age" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="detail2Container" style="flex-direction: column; justify-content: space-between;">
+                        <ui:Label text="DOB" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="DD/MM/YYYY" name="detail1Value" class="detailValue">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="dateOfBirth" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

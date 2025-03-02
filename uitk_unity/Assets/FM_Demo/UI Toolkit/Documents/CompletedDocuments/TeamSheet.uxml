@@ -1,0 +1,35 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="PlayerCard Final" src="project://database/Assets/UI%20Toolkit/Documents/CompletedDocuments/PlayerCard.uxml?fileID=9197481963319205126&amp;guid=265df4b330981d042a57aada6d5308ca&amp;type=3#PlayerCard" />
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/TeamSheet.uss?fileID=7433441132597879392&amp;guid=c2fa85c18ce69de4fbc79f231611a532&amp;type=3#TeamSheet" />
+    <engine:VisualElement name="container" data-source="project://database/Assets/Runtime/Teams/MontrealLumberjacks.asset?fileID=11400000&amp;guid=983f6a3be9a6a2e4c93ab5e333eed204&amp;type=2#MontrealLumberjacks" class="container">
+        <engine:VisualElement name="subContainer" class="sub-container">
+            <engine:VisualElement name="teamInfo" class="teamInfo" style="height: 280px; align-self: flex-start;">
+                <engine:VisualElement name="teamLogo" class="teamLogo" style="margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;">
+                    <Bindings>
+                        <engine:DataBinding property="style.backgroundImage" data-source-path="teamIcon" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:VisualElement>
+                <engine:VisualElement name="teamLabel" class="team-label">
+                    <engine:Label text="Team Name" name="teamNameLabel" style="color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 75px;">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="teamName" binding-mode="ToTarget" />
+                        </Bindings>
+                    </engine:Label>
+                    <engine:VisualElement name="separator" class="separator" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:ScrollView usage-hints="-1" horizontal-scroller-visibility="Hidden" nested-interaction-kind="StopScrolling" name="ScrollView" class="scroll-view">
+                <engine:VisualElement data-source-path="players" name="wrapContainer" class="scroll-view__wrap-container">
+                    <engine:Instance template="PlayerCard Final" data-source-path="[0]" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[1]" style="align-items: flex-start;" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[2]" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[3]" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[4]" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[5]" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[6]" />
+                    <engine:Instance template="PlayerCard Final" data-source-path="[7]" />
+                </engine:VisualElement>
+            </engine:ScrollView>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

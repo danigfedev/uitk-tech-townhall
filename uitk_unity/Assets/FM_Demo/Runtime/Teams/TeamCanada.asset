@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de20c898f3e5edf4eb01d2d83ed90dd5, type: 3}
+  m_Name: TeamCanada
+  m_EditorClassIdentifier: 
+  teamName: Team Canada
+  league: World Cup
+  country: National Canadian League
+  teamIcon: {fileID: 2800000, guid: 4ccd3f435ea25da4d989b92ea1d87ff7, type: 3}
+  players:
+  - {fileID: 11400000, guid: e0fcb430f8d50ae43bb31ae3692c0add, type: 2}
+  - {fileID: 11400000, guid: 6178887256175544e8d202d685b5282c, type: 2}
+  - {fileID: 11400000, guid: 2c17b0d1cc379be4a95e4acb3941ead2, type: 2}
+  - {fileID: 11400000, guid: 17906f972401aa64d854384fb42fd498, type: 2}
+  - {fileID: 11400000, guid: 55c187f9de9f7a74ea9911f618096404, type: 2}
+  - {fileID: 11400000, guid: e6811726eef43dc469761e0c91613889, type: 2}
+  - {fileID: 11400000, guid: 326675f3450ac4445aec04fe29f26fe7, type: 2}
+  - {fileID: 11400000, guid: 8e9cb4ddc0e891d46b058cb18c739b0d, type: 2}

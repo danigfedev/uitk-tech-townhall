@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a705677ede64f64eb5e842c65a012e5, type: 3}
+  m_Name: AlexWolfe
+  m_EditorClassIdentifier: 
+  firstName: Alex
+  lastName: Wolfe
+  age: 28
+  dateOfBirth: Jan 15 1996
+  jerseyNumber: 11
+  position: Right Winger
+  rating: 72
+  physical: 72
+  technical: 55
+  strategy: 80
+  passing: 72
+  shooting: 45
+  countryOfBirth: Canada
+  playerIcon: {fileID: 2800000, guid: 0baabf211a936a14588f326251b57443, type: 3}
+  nationalTeam: {fileID: 11400000, guid: 13083cd90fe0ae24a92f785a0fe840fe, type: 2}
+  club: {fileID: 11400000, guid: 983f6a3be9a6a2e4c93ab5e333eed204, type: 2}

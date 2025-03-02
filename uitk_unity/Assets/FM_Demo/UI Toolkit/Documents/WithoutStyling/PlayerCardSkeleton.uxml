@@ -1,0 +1,59 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="cardContainer" class="cardContainer" style="background-color: rgba(255, 255, 255, 0.63); flex-grow: 1;">
+        <ui:VisualElement name="cardSubContainer" class="cardSubContainer" style="flex-grow: 1;">
+            <ui:VisualElement name="idContainer" class="idContainer" style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0); width: 80px; height: 80px; align-self: center;">
+                <ui:VisualElement name="nameContainer" class="nameContainer" style="flex-direction: row; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); align-self: center;">
+                    <ui:Label text="First" name="firstNameLabel" />
+                    <ui:Label text="Last" name="lastNameLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="mainInfoContainer" class="mainInfoContainer">
+                <ui:VisualElement name="playerInfo" class="playerInfo" style="flex-direction: row; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0); justify-content: space-evenly;">
+                    <ui:VisualElement name="ratingContainer" class="ratingContainer" style="align-self: flex-start; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0);">
+                        <ui:Label text="00" name="ratingValue" class="ratingValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="clubIcon" class="clubIcon" style="width: 75px; height: 75px; background-color: rgba(255, 0, 0, 0.4);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="mainStatContainer" class="mainStatContainer" style="flex-direction: row; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                    <ui:VisualElement name="mainStatSubContainer" style="flex-direction: column; flex-grow: 1; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0);">
+                        <ui:VisualElement name="mainStat1Container" class="mainStat1Container" style="flex-grow: 1; flex-shrink: 0; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); flex-direction: row;">
+                            <ui:Label text="Physical:" name="mainStat1Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat1Value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="mainStat2Container" class="mainStat1Container" style="flex-grow: 1; flex-shrink: 0; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; flex-direction: row;">
+                            <ui:Label text="Technical:" name="mainStat2Label" class="mainStatLabel" />
+                            <ui:Label text="00" name="mainStat2Value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="countryIcon" class="countryIcon" style="width: 75px; height: 75px; background-color: rgba(60, 255, 0, 0.49);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="secondaryInfoContainer" class="secondaryInfoContainer" style="flex-direction: row; flex-grow: 1; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;">
+                <ui:VisualElement name="secStatsContainer" class="secStatsContainer" style="flex-grow: 1;">
+                    <ui:VisualElement name="secStat1Container" style="flex-shrink: 0; flex-grow: 1; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="Strategy" name="secStat1Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat1Bar" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat2Container" style="flex-shrink: 0; flex-grow: 1; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="Passing" name="secStat2Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat2Bar" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secStat3Container" style="flex-shrink: 0; flex-grow: 1; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0);">
+                        <ui:Label text="Shooting" name="secStat3Label" class="secStatLabel" />
+                        <ui:ProgressBar value="22" name="secStat3Bar" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="bioDetails" class="bioDetails">
+                    <ui:VisualElement name="detail1Container" class="bioDetailContainer" style="border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="Age" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="00" name="detail1Value" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="detail2Container" style="flex-direction: column; justify-content: space-between; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                        <ui:Label text="DOB" name="detail1Label" class="detailLabel" />
+                        <ui:Label text="DD/MM/YYYY" name="detail1Value" style="white-space: pre-wrap; width: 56px; -unity-text-align: upper-left; word-spacing: 10px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
